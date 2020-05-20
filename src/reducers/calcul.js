@@ -1,7 +1,7 @@
 import {DELETE_NUMBER, SEND_NUMBER, CREATE_FIRST_QUESTION, CHECK_RESULT, RESET_GAME} from '../constants/actions';
 import {multiplication} from '../utils/multiplication.js'
 
-const numberQuestions = 1;
+const numberQuestions = 10;
 const initialAnswerMessage = {
     question:{
         question:'',
@@ -40,7 +40,7 @@ export default (state = stateInit, action = {}) => {
             return {...state, question: newQuestion};
 
         case CHECK_RESULT:
-            console.log('Vérifier la réponse', state.result==state.question.answer);
+            console.log('Vérifier la réponse', parseInt(state.result)===parseInt(state.question.answer));
             const question = state.question;
             const isCorrect = (state.result===state.question.answer);
 

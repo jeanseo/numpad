@@ -26,10 +26,12 @@ class Question extends Component {
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
-        console.log('nouveau game?',this.props.calcul.questions===this.props.calcul.totalQuestions);
-        if(prevProps.answerMessage!== this.props.answerMessage && this.props.questions!==this.props.totalQuestions){
+        const {questions, totalQuestions, answerMessage} = this.props.calcul;
+
+        if(prevProps.calcul.answerMessage!== answerMessage && questions!==totalQuestions){
+            console.log('on affiche le display');
             this.setState({displaySuccess: true});
-            timer = setTimeout(()=>this.setState({displaySuccess: false}),4000)
+            timer = setTimeout(()=>this.setState({displaySuccess: false}),3000)
         }
 
     }

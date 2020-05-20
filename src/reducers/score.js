@@ -1,5 +1,4 @@
 import {SEND_SCORE, GET_HIGHSCORES} from '../constants/actions';
-import {multiplication} from '../utils/multiplication.js'
 
 
 

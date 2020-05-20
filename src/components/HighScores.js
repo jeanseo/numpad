@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {fetchHighScoresAsync, getHighScores, resetGame} from "../actions/actions-types";
 import {connect} from "react-redux";
 
 class HighScores extends Component {
