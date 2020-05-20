@@ -1,0 +1,8 @@
+export const SEND_NUMBER = "SEND_NUMBER";
+export const DELETE_NUMBER = "DELETE_NUMBER";
+export const CREATE_FIRST_QUESTION = "CREATE_FIRST_QUESTION";
+export const CHECK_RESULT = "CHECK_RESULT";
+export const RESET_GAME = "RESET_GAME";
+
+export const SEND_SCORE = "SEND_SCORE";
+export const GET_HIGHSCORES = "GET_HIGHSCORES";
